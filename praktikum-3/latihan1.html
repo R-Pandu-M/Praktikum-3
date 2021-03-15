@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Konversi Nilai</title>
+    </head>
+    <script language="JavaScript">
+        function test(){
+            x=window.prompt("Masukkan Nilai : ")
+            
+            //if untuk pemilihan opsi konversi angka ke huruf
+            if(x>0 && x<40)
+                document.write("Nilai E")
+            else if(x>40 && x<55)
+                document.write("Nilai D")
+            else if(x>56 && x<60)
+                document.write("Nilai C")
+            else if(x>61 && x<65)
+                document.write("Nilai BC")
+            else if(x>66 && x<70)
+                document.write("Nilai B")
+            else if(x>71 && x<80)
+                document.write("Nilai AB")
+            else if(x>81 && x<100)
+                document.write("Nilai A")
+            else
+                document.write("Nilai Tidak Valid")
+        }
+    </script>
+    <body>
+        <input type="button" name="button1" value="switch"
+        onclick=test()>
+    </body>
+</html>
